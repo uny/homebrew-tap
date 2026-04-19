@@ -1,30 +1,30 @@
 class BrazeSync < Formula
   desc "GitOps CLI for managing Braze configuration as code"
   homepage "https://github.com/uny/braze-sync"
-  version "0.1.0"
+  version "0.7.0"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/uny/braze-sync/releases/download/v#{version}/braze-sync-aarch64-apple-darwin.tar.gz"
-      sha256 "908e78e0deba3f70d0a88b536846b74d5f9a81bdc705bcb8a06e4613555fd63e"
+      sha256 "8ac50309daeaac757061496ed57cea54c6752549e1800fc5bb29453d14d03f5e"
     end
 
     on_intel do
       url "https://github.com/uny/braze-sync/releases/download/v#{version}/braze-sync-x86_64-apple-darwin.tar.gz"
-      sha256 "5d5947f4e7e41865f338ed82651b8637d2fdee9e144f60c53576415829d89c8c"
+      sha256 "53b2af0fb02962e64f4ebdd8df945cea8a799e393110e3ab36c293f9b58ee4fa"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/uny/braze-sync/releases/download/v#{version}/braze-sync-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "b24c003c3ea5b124163344bfa48c1fc24851f2167657ec53dd880abcd506002d"
+      url "https://github.com/uny/braze-sync/releases/download/v#{version}/braze-sync-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "409e094f3af4e61abae8d2c4bab0601b656a3cedcca4775c636b37e2634f6947"
     end
 
     on_intel do
-      url "https://github.com/uny/braze-sync/releases/download/v#{version}/braze-sync-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "0241485a7dbd84cf346587d71721401f9a1b88fb722d28d77591bbbd3cc1109b"
+      url "https://github.com/uny/braze-sync/releases/download/v#{version}/braze-sync-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "f09a8c98dd8c198968cf9b1e1f8573f0247d6a9c31fb7ee78b6d1ffa4b6346ca"
     end
   end
 
