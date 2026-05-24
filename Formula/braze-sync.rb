@@ -7,24 +7,24 @@ class BrazeSync < Formula
   on_macos do
     on_arm do
       url "https://github.com/uny/braze-sync/releases/download/v#{version}/braze-sync-aarch64-apple-darwin.tar.gz"
-      sha256 "74b9f308e220ff5e8fb5ee48d2491162f276d0967286f2527bcb6acb44b88e41"
+      sha256 "54e9488abdc4ee4fb76fb8a95182c6cc1894e6febf3e00e2c8b557f19964fa95"
     end
 
     on_intel do
       url "https://github.com/uny/braze-sync/releases/download/v#{version}/braze-sync-x86_64-apple-darwin.tar.gz"
-      sha256 "902e36277c34afa349b9a91ea448abda7f8a51cd02b8142fb898dac4fb2a3965"
+      sha256 "da2d0c1fe8e7c5eeb8d30e5044d7ab988488feac6518f2c5fb292bed7026ea39"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/uny/braze-sync/releases/download/v#{version}/braze-sync-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "2b10a467099854f64bf3e5f8ed89286206bee545b0173096d47b1258938213a0"
+      sha256 "2906eee25d1a5b6b1f65322b48982260984080a4c051b17f4faf61f36c7022b8"
     end
 
     on_intel do
       url "https://github.com/uny/braze-sync/releases/download/v#{version}/braze-sync-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "ea96c0d65f33193cd1756e913bf1483da1e149a833e0ceb96460039926b77386"
+      sha256 "54f9f6cea7ba1814b4e087e77b071d718685ec852a5d1b4f51bf8dac934f23ca"
     end
   end
 
